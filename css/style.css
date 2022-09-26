@@ -1,0 +1,273 @@
+::-webkit-scrollbar {
+  width: 0;
+}
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+/* общие стили */
+
+.btn {
+  display: inline-block;
+  margin-top: 50px;
+  color: #13B7DB;
+  font-size: 64px;
+  font-weight: bold;
+  font-style: italic;
+  background-color: rgba(0, 0, 0, .7);
+  border-radius: 35px;
+  border-width: 0px;
+}
+body {
+  background-image: url("../images/background.jpg");
+  background-repeat: repeat-y repeat-x;
+  background-size: cover;
+  height: 100%;
+  color: white;
+  font-family: Calibri, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.wrapper {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+/* Заголовок */
+.header{
+  display: flex;
+  height: 150px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.navigation-list {
+  display: flex;
+  list-style: none;
+  font-size: 32px;
+}
+
+.navigation-list-item {
+  margin-right: 55px;
+}
+
+.navigation-list-item:first-child {
+  color: #249083;
+}
+.navigation-list-item:last-child {
+  /* убираем отсуп у последнего элемента списка */
+  margin-right: 0px;
+}
+
+/* 1й экран */
+.main-page {
+  display: flex;
+  margin-bottom: 150px;
+}
+
+.main-page-info {
+  width: 1000px;
+}
+
+.main-page-title {
+  font-size: 56px;
+  margin-top: 110px;
+}
+
+.main-page-subtitle {
+  font-size: 28px;
+  margin-top: 100px;
+}
+
+.main-page-img {
+  margin-top: 25px;
+}
+
+.main-page-connect-link {
+  text-align: center;
+  margin-top: 100px;
+  height: 100px;
+  width: 350px;
+}
+
+/* 2й экран */
+.skills-page-title {
+  font-size: 56px;
+}
+
+.skills-page-content {
+  margin-top: 100px;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.skills-page-video{
+  background-color: rgba(0, 0, 0, .7);
+  border-radius: 35px;
+  border-width: 0px;
+}
+.skills-list {
+  list-style-type: none;
+}
+
+.skills-list-item {
+  position: relative;
+  font-size: 36px;
+  margin-bottom: 40px;
+  margin-left: 60px;
+}
+
+.skills-list-item:last-child {
+  margin-bottom: 0px;
+}
+
+.skills-list-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -60px;
+  mix-blend-mode: screen;
+  background-image: url("../images/star.png");
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+/* 3й экран */
+
+.contact-page {
+  margin-bottom: 150px;
+}
+
+.contact-page-title {
+  margin-top: 135px;
+  margin-bottom: 150px;
+  color: #249083;
+  font-size: 96px;
+  text-align: center;
+}
+
+.contact-page-content {
+  margin-top: 170px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-page-social {
+  display: flex;
+  align-items: center;
+}
+
+.contact-page-social-link {
+  margin-right: 100px;
+}
+
+.contact-page-social-link:last-child {
+  margin-right: 0;
+}
+
+.phone-text,
+.mail-text {
+  font-size: 32px;
+  text-align: center;
+}
+
+/* 4й экран */
+
+.form-page-title {
+  font-size: 96px;
+  color: #249083;
+  text-align: center;
+}
+
+.form-page-subtitle {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.form-page-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-page-form-input {
+  width: 1280px;
+  background-color: rgba(0, 0, 0, .7);
+  padding: 30px 0 20px 20px;
+  font-size: 32px;
+  border-radius: 35px;
+  border-width: 0px;
+  margin-bottom: 35px;
+  font-family: Calibri, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  color: rgba(255, 255, 255, .4);
+}
+
+.form-page-form-input:last-child {
+  margin-bottom: 0;
+}
+
+.form-page-submit-btn {
+  display: inline-block;
+  margin-top: 70px;
+  margin-bottom: 120px;
+  text-align: center;
+  height: 100px;
+  width: 450px;
+}
+
+@media (max-width: 400px)
+{
+  
+}

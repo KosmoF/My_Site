@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>KosmoF</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+	<!-- обертка для выравнивания контента по центру и отступам по бокам -->
+	<div class="wrapper">
+		<!-- заголовок -->
+		<header class="header">
+			<!-- логотип -->
+			<img src="images/logo.png" alt="logo">
+
+			<!-- навигационная панель -->
+			<nav class="navigation">
+				<ul class="navigation-list">
+					<li class="navigation-list-item">Главная</li>
+					<li class="navigation-list-item"><a href="#skills-block">Мои навыки</a></li>
+					<li class="navigation-list-item"><a href="https://github.com/KosmoF/">Мои работы</a></li>
+					<li class="navigation-list-item"><a href="#contact-block">Контакты</a></li>
+				</ul>
+			</nav>
+		</header>
+		<hr>
+
+		<!-- основной контент -->
+		<main class="main">
+			<!-- первый экран -->
+			<section class="main-page">
+				<div class="main-page-info">
+					<h1 class="main-page-title">Верстка сайтов.<br>Разработка Desktop-приложений</h1>
+					<p class="main-page-subtitle">Меня зовут Илья, я программист. Занимаюсь версткой сайтов,
+						изготовлением макетов
+						и разработкой Desktop-приложений на С++/C#.</p>
+					<a class="btn main-page-connect-link" href="#footer-block">Связаться</a>
+				</div>
+
+				<div class="main-page-img">
+					<img src="images/myphoto.png" alt="myphoto">
+				</div>
+			</section>
+
+			<!-- второй экран -->
+			<section id="skills-block" class="skills-page">
+				<div class="skills-page-header">
+					<h2 class="skills-page-title">Мои навыки</h2>
+					<hr>
+				</div>
+
+				<div class="skills-page-content">
+					<div class="skills-page-info">
+						<ul class="skills-list">
+							<li class="skills-list-item">Знание C++/C#, WinForms</li>
+							<li class="skills-list-item">Знание базовых алгоритмов</li>
+							<li class="skills-list-item">Знание HTML5 и CSS</li>
+							<li class="skills-list-item">Умение быстро обучаться</li>
+							<li class="skills-list-item">Умение работать в команде</li>
+						</ul>
+					</div>
+
+					<div>
+						<video class="skills-page-video" width=" 640" height="360" controls="controls" autoplay>
+							<source src="videos/home.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+
+			</section>
+
+			<!-- третий экран -->
+			<section class="contact-page " id="contact-block">
+				<h3 class="contact-page-title">Contact me</h3>
+				<div class="contact-page-content">
+					<div class="mail-block">
+						<img style="mix-blend-mode: screen;" src="images/mail.png" alt="mail">
+						<p class="mail-text">iliyakozhyhov@mail.ru</p>
+					</div>
+					<div class="contact-page-social">
+						<a class="contact-page-social-link" href="#"><img src="images/vk.png" alt="vk"></a>
+						<a class="contact-page-social-link" href="#"><img src="images/whatsapp.png" alt="whatsapp"></a>
+						<a class="contact-page-social-link" href="#"><img src="images/telegram.png" alt="telegram"></a>
+					</div>
+					<div class="phone-block">
+						<img style="mix-blend-mode: screen;" src="images/phone.png" alt="phone">
+						<p class="phone-text">+7 (961) 620-40-45</p>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<!-- подвал -->
+		<footer id="footer-block" class="footer">
+			<!-- четвертый экран -->
+			<h4 class="form-page-title">Заполните форму</h4>
+			<p class="form-page-subtitle">Оставьте заявку прямо сейчас, и я вам отвечу!</p>
+			<form class="form-page-form" action="#" method="post">
+				<input class="form-page-form-input" type="text" name="name" value="" placeholder="Имя">
+				<input class="form-page-form-input" type="text" name="surname" value="" placeholder="Фамилия">
+				<input class="form-page-form-input" type="tel" name="phone" value="" placeholder="Телефон">
+				<input class="form-page-form-input" type="email" name="email" value="" placeholder="E-mail">
+				<button class="btn form-page-submit-btn" type="sumbit" name="button">Отправить</button>
+			</form>
+		</footer>
+	</div>
+
+</body>
+
+</html>
